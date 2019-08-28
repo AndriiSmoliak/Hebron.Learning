@@ -1,0 +1,125 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+/* :root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d; */
+
+  /* These styles are needed only for media query max-width: 575px */
+
+  /* The 'Up' button (circle button at right bottom corner) */
+  /* --btn-color: #fff;
+  --btn-bg-color: #5ebcff;
+
+  --navigation-border-bottom: #ddd;
+  --thumbnail-title: #484747;
+} */
+.responsive {
+    max-width: 1600px;
+    background: black;
+}
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+header > div {
+    color: #878585;
+    padding: 10px;
+    cursor: pointer;
+}
+header > div:first-child {
+    color: #54597d;
+}
+header > div:hover {
+    color: #54597d;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    margin: 100px 0 30px 0;
+
+}
+.wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+.moon1, .moon2, .moon3, .moon4, .moon5, .moon6, .moon7, .moon8, .moon9, .moon10 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.content {
+    width: 50%;
+    padding: 0 10px;
+}
+
+h3 {
+    font-size: 30px;
+    width: 100%;
+    background: linear-gradient(45deg, #fff 25%, #39393a 66%, #4f4f50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*color: #0B2349;*/
+}
+
+p {
+    width: 100%;
+    color: #878585;
+    text-indent: 17px;
+}
+
+img {
+    width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+    header {
+        justify-content: center;
+    }
+    header > div {
+        padding: 20px 10px;
+    }
+    .wrap {
+        width: 70%;
+    }
+    .content, img {
+        width: 100%;
+    }
+    .moon1, .moon3, .moon5, .moon7, .moon9 {
+        flex-wrap: wrap;
+    }
+    .moon2, .moon4, .moon6, .moon8, .moon10 {
+        flex-wrap: wrap-reverse;
+    }
+
+}
+@media screen and (max-width: 575px) {
+    .responsive {
+        background: white;
+    }
+    header {
+        flex-direction: column;
+    }
+    header > div {
+        padding: 3px 10px;
+        border-bottom: 1px solid silver;
+    }
+    h1 {
+        color: black;
+    }
+    h3 {
+        /*color: #878585;*/
+        -webkit-text-fill-color: #575656;
+
+    }
+}
+
+
