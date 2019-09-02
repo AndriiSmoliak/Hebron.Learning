@@ -1,18 +1,18 @@
-let a = parseFloat(prompt(`Укажите сторону 'a':`));
-let b = parseFloat(prompt(`Укажите сторону 'b':`));
-let alph = parseFloat(prompt(`Укажите угол 'α':`));
+let firstSide = parseFloat(prompt(`Укажите сторону 'a':`));
+let secondSide = parseFloat(prompt(`Укажите сторону 'b':`));
+let angle = parseFloat(prompt(`Укажите угол 'α':`));
 
-function func(a, b, alph) {
-    let c = parseFloat(Math.sqrt((Math.pow(a, 2) + Math.pow(b,2)) - (2*(a*b)) * Math.cos(alph * Math.PI / 180)).toFixed(2));
-    let P = a + b + c;
+function triangleСalculation (firstSide, secondSide, angle) {
+    let c = parseFloat(Math.sqrt((Math.pow(firstSide, 2) + Math.pow(secondSide,2)) - (2*(firstSide*secondSide)) * Math.cos(angle * Math.PI / 180)).toFixed(0));
+    let P = firstSide + secondSide + c;
     let p = P/2;
-    let S = Math.sqrt(p*(p-a)*(p-b)*(p-c));
+    const S = Math.sqrt(p*(p-firstSide)*(p-secondSide)*(p-c));
 
 
     console.log('Сторона с равна: ' + c);
-    console.log('Площадь триугольника: ' + S.toFixed(2));
+    console.log('Площадь триугольника: ' + S.toFixed(0));
     console.log('Периметр триугольника: ' + P.toFixed(2));
 }
 
 
-func(a, b, alph);
+triangleСalculation(firstSide, secondSide, angle);
