@@ -63,7 +63,6 @@ while (start) {
                    }
                } else {
                    prize = 0;
-                   game = false;
                    game = confirm('Thank you for a game. Your prize is: '+ box + '$' + ' Do you want to play?');
                }
            }
