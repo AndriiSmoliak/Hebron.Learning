@@ -9,9 +9,9 @@ function triangleСalculation (firstSide, secondSide, angle) {
     const S = Math.sqrt(p*(p-firstSide)*(p-secondSide)*(p-c));
 
 
-    console.log('Сторона с равна: ' + c);
-    console.log('Площадь триугольника: ' + S.toFixed(0));
-    console.log('Периметр триугольника: ' + P.toFixed(2));
+    console.log('Сторона с равна: ' + c,
+    '\nПлощадь триугольника: ' + S.toFixed(0),
+    '\nПериметр триугольника: ' + P.toFixed(2));
 }
 
 
