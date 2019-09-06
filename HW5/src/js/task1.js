@@ -9,11 +9,7 @@ if (login == 'User') {
     } else if (pass != 'SuperUser') {
         alert('Wrong password')
     } else if (pass == 'SuperUser') {
-        if (new Date().getHours() < 20) {
-            alert('Good day!')
-        } else {
-            alert('Good evening!')
-        }
+        (new Date().getHours() < 20) ? alert('Good day!') : alert('Good evening!');
     }
 } else if (login == '' || login == null ) {
     alert('Canceled.')
