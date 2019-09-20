@@ -1,7 +1,7 @@
-function getClosestToZero(arrey1) {
+function getClosestToZero(array1) {
     let arrey2 = [];
-    for (let element = 0; element < arrey1.length; element ++){
-       arrrey2.push(Math.abs(arrey1[element]));
+    for (let element = 0; element < array1.length; element ++){
+       arrrey2.push(Math.abs(array1[element]));
     }
 
   const min = Math.min(...arrey2);
@@ -13,6 +13,6 @@ function getClosestToZero(arrey1) {
          index = i;
         }
     }
-    console.log(arrey1[index])
+    console.log(array1[index])
 }
 getClosestToZero([3,8,9,2,9,7]);

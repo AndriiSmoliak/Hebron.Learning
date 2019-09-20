@@ -2,8 +2,8 @@ function reverseNumber(number) {
     let string = ' ' + number;
     let numberreverse;
     if(number < 0){
-    let string1 = string.substring(2);
-      numberreverse = '-' + string1.split('').reverse().join('');
+    let newStr = string.substring(2);
+      numberreverse = '-' + newStr.split('').reverse().join('');
     }else {
         numberreverse = string.split('').reverse().join('');
     }
